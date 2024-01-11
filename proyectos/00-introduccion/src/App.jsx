@@ -1,7 +1,9 @@
 // import
-import "./App.css"
 
-import ContadorDobleBest from "./components/UseState/ContadorDobleBest.jsx";
+import RegistrarFormulario from "./components/UseState/RegistrarFormulario";
+import TodoListTailwind from "./components/UseState/TodoListTailwind";
+
+//import ContadorDobleBest from "./components/UseState/ContadorDobleBest.jsx";
  
 //Variables globales
 
@@ -39,15 +41,24 @@ const App = () => {
 
     </div>
   )*/
-  return (
+  /**return (
     <>
       <ContadorDobleBest />
     </>
 
-  )
+  )*/
 
+return (
+    <>
 
+     <h1>EJEMPLOS BASICOS REACT</h1>
+    <hr />
+    <RegistrarFormulario />
+    <hr />
+    <TodoListTailwind />
+    </>
 
+)
 }
 
 export default App;
