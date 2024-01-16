@@ -1,38 +1,31 @@
-import React, { useState } from 'react'
+import { useState } from "react"
 
-const initialState={
-    name:"",
-    email:"",
-    password:"",
+const initialState=  {
+    name: "",
+    email: "",
+    password: ""
 }
 
-
-
-function RegistrarFormulario() {
+const RegistrarFormulario = () => {
 
 const [formData, setFormData] = useState(initialState)
-
-function handleSubmit(e) {
+function handleSubmit (e){
     e.preventDefault();
-
-    //esto lo ultimo que sino se carga todos losdatos guardados
-    setFormData(initialState);
+    console.log("las credenciales son: ", formData);
+    setFormData(initialState)
 }
-
-function handleChange(e) {
+function handleChange (e){
     e.preventDefault();
-    const{name,value}=e.target;
-    setFormData({
+    const {name, value} = e.target;
+    setFormData( {
         ...formData,
-        [name]:value,
-        
-    });
-    console.log(name,value);
+        [name]: value
+    } )
 }
+
+
   return (
-    <>
-   
-   <div className='max-w-md mx-auto mt-8 p-6 shadow-md rounded-md'>
+    <div className='max-w-md mx-auto mt-8 p-6 shadow-md rounded-md'>
     <h1 className="text-2x1 mb-4 font-bold text-center">Formulario de registro</h1>
     <form onSubmit={handleSubmit}>
         <div className="max-w-md mx-auto mt-4 p-6 bg-slate-300 shadow-md rounded-md ">
@@ -70,9 +63,8 @@ function handleChange(e) {
         className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-800"
         >Registrar usuario</button>
     </form>
-</div>
-    </>
+    </div>
   )
 }
 
-export default RegistrarFormulario;
+export default RegistrarFormulario
