@@ -8,7 +8,7 @@ const CardGitHub = (props) => {
   return (
     <div className=' relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md my-5'>
       <div key={key} className='relative mx-4 mt-6 h-40 overflow-visible rounded-xl bg-blue-500 bg-clip-border text-white shadow-lg
-      shadow-blue-500/40 bg-gradient-to-t from-blue-500 to-blue-900
+      shadow-purple-500/40 bg-gradient-to-t from-purple-200 to-purple-950
       '>
         <img src={avatar_url} onClick={handleClickimg} alt='' className='w-32 h-32 rounded-full my-4 mx-auto cursor-pointer'/>
       </div>
