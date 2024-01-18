@@ -22,7 +22,7 @@ const CardGitHub = (props) => {
       </div>
       <div className='p-6 pt-0'>
         <button className='select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-sm font-bold uppercase text-white shaddow-md shadow-blue-800/20 transition-all 
-        hover:shadow-blue-800/50' >Ir a GitHub</button>
+        hover:shadow-blue-800/50' ><a href={html_url}>❇ Ir a GitHub ❇ </a></button>
       </div>
     </div>
   )

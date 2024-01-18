@@ -9,7 +9,7 @@ import React from 'react'
           <div className='z-10 bg-white p-4 rounded-lg max-w-2xl'>
             <img src={imgUrl} alt="Avatar usuario" className='w-full rounded' />
             <button className='mt-4 p-2 bg-blue-500 text-white rounded' onClick={closeModal}>
-              Cerrar
+             ❌ Cerrar ❌
             </button>
           </div>
         </div>
